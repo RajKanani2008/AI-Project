@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,116 +13,105 @@
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- Sidebar -->
-        <div class="sidebar">
+    <div class="sidebar">
 
-            <div class="logo">
-                <i class="fa-solid fa-robot"></i>
-                <h2>AI Assistant</h2>
-            </div>
-
-            <button class="menu-btn" id="newChatBtn">
-                <i class="fa-solid fa-plus"></i> New Chat
-            </button>
-
-            <!-- Chat List -->
-            <div class="chat-history-section">
-
-                <h3 style="color:white;padding:10px 5px;">
-                    Chats
-                </h3>
-
-                <div id="chatList">
-
-                </div>
-
-            </div>
-
-            <button class="menu-btn" id="searchChatsBtn">
-                <i class="fa-solid fa-magnifying-glass"></i> Search Chats
-            </button>
-
-            <button class="menu-btn" id="libraryBtn">
-                <i class="fa-solid fa-book"></i> Library
-            </button>
-
-            <button class="menu-btn" id="appsBtn">
-                <i class="fa-solid fa-table-cells"></i> Apps
-            </button>
-
-            <button class="menu-btn" id="deepSearchBtn">
-                <i class="fa-solid fa-brain"></i> Deep Search
-            </button>
-
-            <button class="menu-btn" id="historyBtn">
-                <i class="fa-solid fa-clock-rotate-left"></i> History
-            </button>
-
-            <button class="menu-btn" id="premiumBtn">
-                <i class="fa-solid fa-crown"></i> Premium Plans
-            </button>
-
-            <button class="menu-btn" id="profileBtn">
-                <i class="fa-solid fa-user"></i> User Profile
-            </button>
-
-            <button class="menu-btn" id="accountBtn">
-                <i class="fa-solid fa-circle-user"></i> Account Menu
-            </button>
-
-            <button class="menu-btn" id="settingsBtn">
-                <i class="fa-solid fa-gear"></i> Settings
-            </button>
-
-            <button class="menu-btn logout" id="logoutBtn">
-                <i class="fa-solid fa-right-from-bracket"></i> Logout
-            </button>
-
+        <div class="logo">
+            <i class="fa-solid fa-robot"></i>
+            <h2>AI Assistant</h2>
         </div>
 
-        <!-- Main -->
-        <div class="main">
+        <button class="menu-btn" id="newChatBtn">
+            <i class="fa-solid fa-plus"></i>
+            New Chat
+        </button>
 
-            <div class="chat-container" id="chatContainer">
+        <h3 class="menu-title">Chats</h3>
 
-                <div class="bot-message">
-                    Hello Raj 👋 <br>
-                    How can I help you today?
-                </div>
+        <button class="menu-btn" id="searchChatBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search Chats
+        </button>
 
+        <button class="menu-btn" id="libraryBtn">
+            <i class="fa-solid fa-book"></i>
+            Library
+        </button>
+
+        <button class="menu-btn" id="appsBtn">
+            <i class="fa-solid fa-table-cells"></i>
+            Apps
+        </button>
+
+        <button class="menu-btn" id="deepSearchBtn">
+            <i class="fa-solid fa-brain"></i>
+            Deep Search
+        </button>
+
+        <button class="menu-btn" id="historyBtn">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            History
+        </button>
+
+        <button class="menu-btn" id="premiumBtn">
+            <i class="fa-solid fa-crown"></i>
+            Premium Plans
+        </button>
+
+        <button class="menu-btn" id="profileBtn">
+            <i class="fa-solid fa-user"></i>
+            User Profile
+        </button>
+
+        <button class="menu-btn" id="accountBtn">
+            <i class="fa-solid fa-circle-user"></i>
+            Account Menu
+        </button>
+
+        <button class="menu-btn" id="settingsBtn">
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </button>
+
+        <button class="menu-btn logout" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+            <h1 id="welcomeText">Welcome Raj 👋</h1>
+            <p>Your Personal AI Assistant</p>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="bot-message">
+                Hello Raj 👋 <br>
+                How can I help you today?
             </div>
+        </div>
 
-            <div class="input-area">
+        <div class="input-area">
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask Anything..."
+                autocomplete="off">
 
-                <input
-                    type="text"
-                    id="message"
-                    placeholder="Ask Anything...">
-
-                <button id="sendBtn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                </button>
-
-            </div>
-
+            <button id="sendBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
         </div>
 
     </div>
 
-    <div id="historyPanel" class="popup-panel">
-        <h3>Chat History</h3>
-        <div id="historyList"></div>
-    </div>
+</div>
 
-    <div id="settingsPanel" class="popup-panel">
-        <h3>Settings</h3>
-        <button id="darkModeBtn">🌙 Dark Mode</button>
-    </div>
-
-    <script src="dashboard.js"></script>
+<script src="dashboard.js"></script>
 
 </body>
-
 </html>
